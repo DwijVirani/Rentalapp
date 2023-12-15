@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/black"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/card_img"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:scaleType="fitXY"
+                android:paddingTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/img5"/>
+
+
+            <LinearLayout
+                android:id="@+id/property_specs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintStart_toEndOf="@id/card_img">
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="109dp"
+                    android:layout_height="wrap_content"
+                    android:text="$1527/-"
+                    android:textSize="20dp"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/property_description"
+                    android:layout_width="109dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:text="2Bed|2Bath|1250 sqft"
+                    android:textSize="15dp"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/city_province"
+                    android:layout_width="109dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="wrap_content"
+                    android:text="Toronto,ON"
+                    android:textSize="15dp"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/enq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="7dp"
+                app:layout_constraintStart_toEndOf="@id/property_specs"
+                app:layout_constraintTop_toTopOf="parent"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/enquiry"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#E91E63"
+                    android:text="Enquiry"/>
+                <Button
+                    android:id="@+id/call"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:backgroundTint="#03C690"
+                    android:text="Call"/>
+            </LinearLayout>
+<!--            <CheckBox-->
+<!--                android:id="@+id/like_button_cb"-->
+<!--                android:layout_width="32dp"-->
+<!--                android:layout_height="32dp"-->
+<!--                android:layout_marginVertical="8dp"-->
+<!--                android:background="@drawable/like_button_background"-->
+<!--                android:button="@null"-->
+<!--                android:gravity="center"-->
+<!--                android:checked="true"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                android:visibility="visible" />-->
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

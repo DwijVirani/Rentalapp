@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Rental-app</string>
+    <string name="privacy_policy_text">I have read the <a href="https://4rent.ca/privacy-policy">Privacy Policy</a></string>
+</resources>

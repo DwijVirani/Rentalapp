@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="#03C690"
+    tools:context=".activities.RegistrationActivity"
+    android:id="@+id/rootLayout">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_margin="8dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register with 4Rent.ca"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_margin="8dp"
+        />
+    <ScrollView android:layout_marginTop="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="16dp"
+                android:hint="First Name"
+                android:inputType="text"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/etLastName"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="16dp"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="16dp"
+                android:hint="Your Email"
+                android:inputType="textEmailAddress"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="16dp"
+                android:hint="Your Phone Number"
+                android:inputType="phone"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="16dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:layout_margin="8dp"
+                />
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/custom_input"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="16dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:layout_margin="8dp"
+                />
+
+            <TextView
+                android:id="@+id/tvError"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_red_light"
+                />
+            <CheckBox
+                android:id="@+id/cbPrivacyPolicy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/privacy_policy_text"
+                android:layout_margin="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:text="By registering, you may receive info by email, phone, or text from 4Rent.ca and/or it’s partner property managers. You may opt-out at anytime."
+                android:layout_margin="8dp"
+                />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textColor="#03C690"
+                android:backgroundTint="@color/white"
+                android:layout_margin="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already have a account? Log In"
+                android:textAlignment="center"
+                android:layout_margin="8dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
